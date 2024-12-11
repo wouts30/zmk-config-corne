@@ -53,6 +53,8 @@
 */
 
 
+
+
 /*
  * Copyright (c) 2020 The ZMK Contributors
  *
@@ -65,6 +67,17 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+      hm: homerow_mods {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <250>;
+        quick_tap_ms = <0>;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+      };
+    };
     combos {
         compatible = "zmk,combos";
 
@@ -96,7 +109,7 @@
 
             bindings = <
 &kp TAB           &kp Q               &kp W             &kp E           &kp R           &kp T          &kp Y        &kp U            &kp I            &kp O              &kp P                   &kp BSPC
-&mt LCTRL ESCAPE  &mt LEFT_CONTROL A  &mt LEFT_SHIFT S  &mt LEFT_ALT D  &mt LEFT_GUI F  &kp G          &kp H        &mt RIGHT_GUI J  &mt RIGHT_ALT K  &mt RIGHT_SHIFT L  &mt RIGHT_CONTROL SEMI  &kp ENTER
+&hm LCTRL ESCAPE  &hm LEFT_CONTROL A  &hm LEFT_SHIFT S  &hm LEFT_ALT D  &hm LEFT_GUI F  &kp G          &kp H        &hm RIGHT_GUI J  &hm RIGHT_ALT K  &hm RIGHT_SHIFT L  &hm RIGHT_CONTROL SEMI  &kp ENTER
 &kp LSHFT         &kp Z               &kp X             &kp C           &kp V           &kp B          &kp N        &kp M            &kp COMMA        &kp DOT            &kp FSLH                &kp SINGLE_QUOTE
                                                         &caps_word      &lt 3 UNDER     &lt 2 ENTER    &lt 2 SPACE  &lt 1 BACKSPACE  &kp DELETE
             >;
@@ -114,7 +127,7 @@
         layer_4 {
             bindings = <
 &kp AT      &kp AMPS               &kp PERCENT              &kp LEFT_BRACKET               &kp RIGHT_BRACKET               &kp BACKSLASH    &kp SLASH  &kp N7  &kp N8  &kp N9  &kp STAR  &kp BACKSPACE
-&kp GRAVE   &mt LEFT_CONTROL EXCL  &mt LEFT_SHIFT QUESTION  &mt LEFT_ALT LEFT_PARENTHESIS  &mt LEFT_GUI RIGHT_PARENTHESIS  &kp MINUS        &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp SEMI  &kp SINGLE_QUOTE
+&kp GRAVE   &hm LEFT_CONTROL EXCL  &hm LEFT_SHIFT QUESTION  &hm LEFT_ALT LEFT_PARENTHESIS  &hm LEFT_GUI RIGHT_PARENTHESIS  &kp MINUS        &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp SEMI  &kp SINGLE_QUOTE
 &kp DOLLAR  &trans                 &trans                   &kp POUND                      &kp CARET                       &kp COMMA        &kp DOT    &kp N1  &kp N2  &kp N3  &kp FSLH  &trans
                                                             &trans                         &trans                          &trans           &trans     &trans  &kp N0
             >;
