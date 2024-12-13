@@ -90,12 +90,12 @@
 
         dot {
             bindings = <&kp DOT>;
-            key-positions = <30 31>;
+            key-positions = <19 20>;
         };
 
         comma {
             bindings = <&kp COMMA>;
-            key-positions = <28 29>;
+            key-positions = <15 16>;
         };
 
         underscore {
@@ -110,7 +110,7 @@
 
         semi {
             bindings = <&kp SEMICOLON>;
-            key-positions = <28 29 30 31>;
+            key-positions = <16 15 19 20>;
             layers = <0>;
         };
 
@@ -131,7 +131,7 @@
 
         colon {
             bindings = <&kp COLON>;
-            key-positions = <18 30>;
+            key-positions = <16 19>;
         };
 
         slash {
@@ -148,6 +148,16 @@
             bindings = <&kp MINUS>;
             key-positions = <7 8>;
         };
+
+        equals {
+            bindings = <&kp EQUAL>;
+            key-positions = <7 8 9>;
+        };
+
+        times {
+            bindings = <&kp ASTRK>;
+            key-positions = <20 7>;
+        };
     };
 
     keymap {
@@ -161,7 +171,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp GRAVE              &kp Q               &kp W             &kp E           &kp R           &kp T          &kp Y                   &kp U            &kp I            &kp O              &kp P                   &kp BSPC
+&kp DEL                &kp Q               &kp W             &kp E           &kp R           &kp T          &kp Y                   &kp U            &kp I            &kp O              &kp P                   &kp BSPC
 &hm LEFT_SHIFT ESCAPE  &hm LEFT_CONTROL A  &hm LEFT_SHIFT S  &hm LEFT_ALT D  &hm LEFT_GUI F  &kp G          &kp H                   &hm RIGHT_GUI J  &hm RIGHT_ALT K  &hm RIGHT_SHIFT L  &hm RIGHT_CONTROL SEMI  &kp ENTER
 &caps_word             &kp Z               &kp X             &kp C           &kp V           &kp B          &kp N                   &kp M            &kp COMMA        &kp DOT            &kp FSLH                &kp SINGLE_QUOTE
                                                              &key_repeat     &lt 3 TAB       &lt 1 ENTER    &hm LEFT_CONTROL SPACE  &lt 2 BACKSPACE  &lt 4 DELETE
@@ -170,19 +180,19 @@
 
         layer_symb {
             bindings = <
-&trans  &trans                 &trans                   &kp LEFT_BRACKET               &kp RIGHT_BRACKET               &kp COMMA        &kp DOT    &kp N7             &kp N8  &kp N9  &kp STAR  &trans
-&trans  &hm LEFT_CONTROL EXCL  &hm LEFT_SHIFT QUESTION  &hm LEFT_ALT LEFT_PARENTHESIS  &hm LEFT_GUI RIGHT_PARENTHESIS  &kp MINUS        &kp EQUAL  &kp N4             &kp N5  &kp N6  &trans    &trans
-&trans  &trans                 &trans                   &trans                         &kp CARET                       &kp BACKSLASH    &kp SLASH  &kp N1             &kp N2  &kp N3  &trans    &trans
-                                                        &trans                         &trans                          &trans           &trans     &hm LEFT_SHIFT N0  &trans
+&kp GRAVE  &trans                       &trans                      &kp LEFT_BRACKET               &kp RIGHT_BRACKET               &kp CARET        &kp PIPE          &kp N7             &kp N8  &kp N9  &kp STAR  &trans
+&trans     &hm LEFT_CONTROL LEFT_BRACE  &hm LEFT_SHIFT RIGHT_BRACE  &hm LEFT_ALT LEFT_PARENTHESIS  &hm LEFT_GUI RIGHT_PARENTHESIS  &kp EXCL         &kp QUESTION      &kp N4             &kp N5  &kp N6  &trans    &trans
+&trans     &trans                       &trans                      &kp PERCENT                    &kp AMPERSAND                   &kp LESS_THAN    &kp GREATER_THAN  &kp N1             &kp N2  &kp N3  &trans    &trans
+                                                                    &trans                         &trans                          &trans           &trans            &hm LEFT_SHIFT N0  &trans
             >;
         };
 
         layer_navi {
             bindings = <
-&kp DEL  &kp LA(F4)              &kp LC(W)             &trans              &kp LC(R)               &kp LC(TAB)    &kt PAGE_UP    &kp HOME            &kp UP    &kp END        &kp LG(P)  &kp BACKSPACE
-&trans   &hm LEFT_CONTROL LC(A)  &hm LEFT_SHIFT LC(S)  &hm LEFT_ALT LG(D)  &hm LEFT_GUI LC(LS(R))  &trans         &kp PAGE_DOWN  &kp LEFT            &kp DOWN  &kp RIGHT      &kp LG(L)  &kp ENTER
-&trans   &trans                  &trans                &trans              &trans                  &trans         &trans         &kp LC(LEFT_ARROW)  &trans    &kp LC(RIGHT)  &trans     &trans
-                                                       &trans              &trans                  &trans         &trans         &trans              &trans
+&kp DEL  &kp LA(F4)  &kp LC(W)  &kp LC(LS(R))           &kp LC(R)           &kp LC(TAB)     &kt PAGE_UP    &kp HOME            &kp UP    &kp END        &kp LG(P)  &kp BACKSPACE
+&trans   &trans      &trans     &kp C_AL_PREVIOUS_TASK  &kp C_AL_NEXT_TASK  &kp LC(Z)       &kp PAGE_DOWN  &kp LEFT            &kp DOWN  &kp RIGHT      &kp LG(L)  &kp ENTER
+&trans   &trans      &trans     &trans                  &trans              &kp C_AL_WWW    &trans         &kp LC(LEFT_ARROW)  &trans    &kp LC(RIGHT)  &trans     &trans
+                                &trans                  &trans              &trans          &trans         &trans              &trans
             >;
         };
 
