@@ -90,22 +90,22 @@
 
         dot {
             bindings = <&kp DOT>;
-            key-positions = <21 22>;
+            key-positions = <20 19>;
         };
 
         comma {
             bindings = <&kp COMMA>;
-            key-positions = <20 19>;
+            key-positions = <20 21>;
         };
 
         underscore {
             bindings = <&kp UNDER>;
-            key-positions = <31 30>;
+            key-positions = <7 9 8>;
         };
 
         plus {
             bindings = <&kp PLUS>;
-            key-positions = <19 20 18>;
+            key-positions = <8 19 21 39>;
         };
 
         semi {
@@ -131,42 +131,42 @@
 
         colon {
             bindings = <&kp COLON>;
-            key-positions = <21 20>;
+            key-positions = <18 19>;
         };
 
         slash {
             bindings = <&kp SLASH>;
-            key-positions = <19 8 39>;
+            key-positions = <39 30 19>;
         };
 
         backslash {
             bindings = <&kp BACKSLASH>;
-            key-positions = <16 3 38>;
+            key-positions = <38 29 16>;
         };
 
         minus {
             bindings = <&kp MINUS>;
-            key-positions = <19 18>;
+            key-positions = <8 9>;
         };
 
         equals {
             bindings = <&kp EQUAL>;
-            key-positions = <7 6>;
+            key-positions = <7 8>;
         };
 
         times {
             bindings = <&kp ASTRK>;
-            key-positions = <30 31 32>;
+            key-positions = <7 20>;
         };
 
         arrow_left {
             bindings = <&kp LESS_THAN>;
-            key-positions = <38 15 4>;
+            key-positions = <38 16 27>;
         };
 
         arrow_right {
             bindings = <&kp GREATER_THAN>;
-            key-positions = <39 20 7>;
+            key-positions = <39 19 32>;
         };
 
         curly_brace_left {
@@ -192,6 +192,26 @@
         pound {
             bindings = <&kp POUND>;
             key-positions = <6 7 8>;
+        };
+
+        exclamation_mark {
+            bindings = <&kp EXCL>;
+            key-positions = <6 18 39>;
+        };
+
+        question_mark {
+            bindings = <&kp QUESTION>;
+            key-positions = <6 7 39>;
+        };
+
+        up_arrow {
+            bindings = <&kp CARET>;
+            key-positions = <19 8 21>;
+        };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <18 30 39>;
         };
     };
 
