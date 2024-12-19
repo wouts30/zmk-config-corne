@@ -80,7 +80,7 @@
 
         dbl_quotes {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <4 7 17 18>;
+            key-positions = <5 17 6 18>;
         };
 
         single_quotes {
@@ -90,12 +90,12 @@
 
         dot {
             bindings = <&kp DOT>;
-            key-positions = <20 19>;
+            key-positions = <20 21>;
         };
 
         comma {
             bindings = <&kp COMMA>;
-            key-positions = <20 21>;
+            key-positions = <20 19>;
         };
 
         underscore {
@@ -105,7 +105,7 @@
 
         plus {
             bindings = <&kp PLUS>;
-            key-positions = <8 19 21 39>;
+            key-positions = <7 6>;
         };
 
         semi {
@@ -121,12 +121,12 @@
 
         leftparent {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <38 16>;
+            key-positions = <38 15>;
         };
 
         rightparent {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <39 19>;
+            key-positions = <39 20>;
         };
 
         colon {
@@ -136,22 +136,22 @@
 
         slash {
             bindings = <&kp SLASH>;
-            key-positions = <39 30 19>;
+            key-positions = <39 20 31>;
         };
 
         backslash {
             bindings = <&kp BACKSLASH>;
-            key-positions = <38 29 16>;
+            key-positions = <38 15 28>;
         };
 
         minus {
             bindings = <&kp MINUS>;
-            key-positions = <8 9>;
+            key-positions = <8 7>;
         };
 
         equals {
             bindings = <&kp EQUAL>;
-            key-positions = <7 8>;
+            key-positions = <8 9>;
         };
 
         times {
@@ -161,37 +161,37 @@
 
         arrow_left {
             bindings = <&kp LESS_THAN>;
-            key-positions = <38 16 27>;
+            key-positions = <38 17 28>;
         };
 
         arrow_right {
             bindings = <&kp GREATER_THAN>;
-            key-positions = <39 19 32>;
+            key-positions = <39 18 31>;
         };
 
         curly_brace_left {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <38 4>;
+            key-positions = <38 3>;
         };
 
         curly_brace_right {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <39 7>;
+            key-positions = <39 8>;
         };
 
         bracket_left {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <38 28>;
+            key-positions = <38 16>;
         };
 
         bracket_right {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <39 31>;
+            key-positions = <39 19>;
         };
 
         pound {
             bindings = <&kp POUND>;
-            key-positions = <6 7 8>;
+            key-positions = <17 29 18 30>;
         };
 
         exclamation_mark {
