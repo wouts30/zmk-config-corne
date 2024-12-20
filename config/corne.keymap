@@ -100,7 +100,7 @@
 
         underscore {
             bindings = <&kp UNDER>;
-            key-positions = <7 9 8>;
+            key-positions = <19 21>;
         };
 
         plus {
@@ -156,7 +156,7 @@
 
         times {
             bindings = <&kp ASTRK>;
-            key-positions = <7 20>;
+            key-positions = <9 10>;
         };
 
         arrow_left {
@@ -206,12 +206,12 @@
 
         up_arrow {
             bindings = <&kp CARET>;
-            key-positions = <19 8 21>;
+            key-positions = <8 21>;
         };
 
         pipe {
             bindings = <&kp PIPE>;
-            key-positions = <8 31>;
+            key-positions = <39 6>;
         };
     };
 
