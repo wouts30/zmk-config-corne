@@ -80,7 +80,7 @@
 
         dbl_quotes {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <5 6>;
+            key-positions = <18 7 8>;
         };
 
         single_quotes {
@@ -110,7 +110,7 @@
 
         semi {
             bindings = <&kp SEMICOLON>;
-            key-positions = <19 20 21>;
+            key-positions = <31 32>;
             layers = <0>;
         };
 
@@ -131,17 +131,17 @@
 
         colon {
             bindings = <&kp COLON>;
-            key-positions = <18 19>;
+            key-positions = <32 33>;
         };
 
         slash {
             bindings = <&kp SLASH>;
-            key-positions = <39 30 19>;
+            key-positions = <20 31>;
         };
 
         backslash {
             bindings = <&kp BACKSLASH>;
-            key-positions = <38 29 16>;
+            key-positions = <15 28>;
         };
 
         minus {
@@ -196,7 +196,7 @@
 
         exclamation_mark {
             bindings = <&kp EXCL>;
-            key-positions = <31 32>;
+            key-positions = <18 19>;
         };
 
         question_mark {
@@ -211,7 +211,7 @@
 
         pipe {
             bindings = <&kp PIPE>;
-            key-positions = <8 20>;
+            key-positions = <8 31>;
         };
     };
 
