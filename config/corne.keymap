@@ -80,7 +80,7 @@
 
         dbl_quotes {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <5 17 6 18>;
+            key-positions = <5 6>;
         };
 
         single_quotes {
@@ -136,12 +136,12 @@
 
         slash {
             bindings = <&kp SLASH>;
-            key-positions = <39 20 31>;
+            key-positions = <39 30 19>;
         };
 
         backslash {
             bindings = <&kp BACKSLASH>;
-            key-positions = <38 15 28>;
+            key-positions = <38 29 16>;
         };
 
         minus {
@@ -196,12 +196,12 @@
 
         exclamation_mark {
             bindings = <&kp EXCL>;
-            key-positions = <6 18 39>;
+            key-positions = <31 32>;
         };
 
         question_mark {
             bindings = <&kp QUESTION>;
-            key-positions = <6 7 39>;
+            key-positions = <30 31>;
         };
 
         up_arrow {
@@ -211,7 +211,7 @@
 
         pipe {
             bindings = <&kp PIPE>;
-            key-positions = <18 30 39>;
+            key-positions = <8 20>;
         };
     };
 
