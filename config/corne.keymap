@@ -111,12 +111,12 @@
 
         leftparent {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <38 16>;
+            key-positions = <38 15>;
         };
 
         rightparent {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <39 19>;
+            key-positions = <39 20>;
         };
 
         slash {
@@ -131,37 +131,37 @@
 
         curly_brace_left {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <38 28>;
+            key-positions = <38 27>;
         };
 
         curly_brace_right {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <39 31>;
+            key-positions = <39 32>;
         };
 
         bracket_left {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <38 28>;
+            key-positions = <38 3>;
         };
 
         bracket_right {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <39 31>;
+            key-positions = <39 8>;
         };
 
         pound {
             bindings = <&kp POUND>;
-            key-positions = <31 20 15 28>;
+            key-positions = <18 39>;
         };
 
         up_arrow {
             bindings = <&kp CARET>;
-            key-positions = <5 38>;
+            key-positions = <38 4>;
         };
 
         pipe {
             bindings = <&kp PIPE>;
-            key-positions = <39 6>;
+            key-positions = <39 7>;
         };
 
         tilde {
@@ -199,12 +199,12 @@
 
         exclaimation {
             bindings = <&kp EXCL>;
-            key-positions = <17 38>;
+            key-positions = <38 16>;
         };
 
         question {
             bindings = <&kp QUESTION>;
-            key-positions = <18 39>;
+            key-positions = <39 19>;
         };
 
         star {
@@ -232,12 +232,17 @@
 
         at {
             bindings = <&kp AT>;
-            key-positions = <29 38>;
+            key-positions = <38 28>;
         };
 
         percentage {
             bindings = <&kp PERCENT>;
-            key-positions = <30 39>;
+            key-positions = <39 31>;
+        };
+
+        underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <31 33>;
         };
     };
 
