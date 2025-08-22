@@ -283,13 +283,13 @@
         backspace {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <19 20>;
-            layers = <3>;
+            layers = <0>;
         };
 
-        ctrl_right {
-            bindings = <&kp LC(RIGHT)>;
+        backspace_normal {
+            bindings = <&kp BACKSPACE>;
             key-positions = <20 21>;
-            layers = <3>;
+            layers = <0>;
         };
 
         equals {
