@@ -295,7 +295,7 @@
         equals {
             bindings = <&kp EQUAL>;
             key-positions = <8 9>;
-            require-prior-idle-ms = <4>;
+            require-prior-idle-ms = <40>;
             layers = <0 2>;
         };
 
@@ -367,6 +367,16 @@
             key-positions = <20 21>;
             layers = <3>;
         };
+
+        greater {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <19 30>;
+        };
+
+        less_than {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <29 16>;
+        };
     };
 
     macros {
@@ -403,10 +413,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp DELETE    &kp Q                 &kp W               &kp E             &kp R             &kp T        &kp Y      &kp U             &kp I             &kp O                &kp P                     &kp BSPC
-&gresc        &lhmp LEFT_CONTROL A  &lhmr LEFT_SHIFT S  &lhmm LEFT_ALT D  &lhmi LEFT_GUI F  &kp G        &kp H      &rhmi LEFT_GUI J  &rhmm LEFT_ALT K  &rhmr RIGHT_SHIFT L  &rhmp RIGHT_CONTROL SEMI  &kp ENTER
-&sk LEFT_ALT  &kp Z                 &kp X               &kp C             &kp V             &kp B        &kp N      &kp M             &kp COMMA         &kp DOT              &kp FSLH                  &sk LEFT_GUI
-                                                        &lt 1 DEL         &lt 2 TAB         &kp SPACE    &kp SPACE  &lt 3 ENTER       &lt 4 BACKSPACE
+&kp DELETE    &kp Q                 &kp W               &kp E             &kp R             &kp T              &kp Y      &kp U             &kp I             &kp O                &kp P                     &kp BSPC
+&gresc        &lhmp LEFT_CONTROL A  &lhmr LEFT_SHIFT S  &lhmm LEFT_ALT D  &lhmi LEFT_GUI F  &kp G              &kp H      &rhmi LEFT_GUI J  &rhmm LEFT_ALT K  &rhmr RIGHT_SHIFT L  &rhmp RIGHT_CONTROL SEMI  &kp ENTER
+&sk LEFT_ALT  &kp Z                 &kp X               &kp C             &kp V             &kp B              &kp N      &kp M             &kp COMMA         &kp DOT              &kp FSLH                  &sk LEFT_GUI
+                                                        &lt 1 DEL         &lt 2 TAB         &lt 1 BACKSPACE    &kp SPACE  &lt 3 ENTER       &lt 4 BACKSPACE
             >;
         };
 
@@ -421,10 +431,10 @@
 
         layer_symb {
             bindings = <
-&trans  &trans                         &trans                        &kp LEFT_BRACKET                 &kp RIGHT_BRACKET                 &kp CARET        &kp PIPE          &kp N7               &kp N8  &kp N9  &trans  &trans
-&trans  &lhmp LEFT_CONTROL LEFT_BRACE  &lhmp LEFT_SHIFT RIGHT_BRACE  &lhmp LEFT_ALT LEFT_PARENTHESIS  &lhmp LEFT_GUI RIGHT_PARENTHESIS  &kp LESS_THAN    &kp GREATER_THAN  &kp N4               &kp N5  &kp N6  &trans  &trans
-&trans  &trans                         &trans                        &kp LEFT_BRACE                   &kp RIGHT_BRACE                   &kp AMPS         &kp PERCENT       &kp N1               &kp N2  &kp N3  &trans  &trans
-                                                                     &trans                           &trans                            &trans           &trans            &lhmp LEFT_SHIFT N0  &trans
+&trans  &trans                    &kp LEFT_BRACKET                   &kp RIGHT_BRACKET                 &kp HASH     &kp CARET        &kp PIPE          &kp N7               &kp N8  &kp N9  &trans  &trans
+&trans  &lhmp LEFT_CONTROL TILDE  &lhmp LEFT_SHIFT LEFT_PARENTHESIS  &lhmp LEFT_ALT RIGHT_PARENTHESIS  &kp PERCENT  &kp LESS_THAN    &kp GREATER_THAN  &kp N4               &kp N5  &kp N6  &trans  &trans
+&trans  &trans                    &kp LEFT_BRACE                     &kp RIGHT_BRACE                   &kp DOLLAR   &kp AMPS         &kp STAR          &kp N1               &kp N2  &kp N3  &trans  &trans
+                                                                     &trans                            &trans       &trans           &trans            &lhmp LEFT_SHIFT N0  &trans
             >;
         };
 
